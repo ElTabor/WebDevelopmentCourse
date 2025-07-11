@@ -1,0 +1,181 @@
+@font-face {
+    font-family: 'Text';
+    src: url(Text.otf), format('opentype');
+}
+
+@font-face {
+    font-family: 'Titles';
+    src: url(Titles.ttf), format('opentype');
+}
+
+
+body{
+    height: 100%;
+    width: 100%;
+    font-family:'Text';
+    background-color: #E8D2AE;
+    color: #E8D2AE;
+    margin:0;
+}
+
+div.container{
+    display:flex;
+    flex-direction: row;
+}
+
+header{
+    width: 100%;
+    height: auto;
+
+    position: sticky;
+    top: 0;
+
+    background-color: #34623F;
+    text-align: center;
+
+    font-size: 24px;
+}
+
+main {
+    width: 80%;
+    margin: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+h1, h2, h3{
+    font-family:'Titles';
+    margin: 0;
+    color: #D7B29D; 
+    font-style: bold;
+}
+
+h1 .title {
+    font-size: 36px;
+}
+
+h2 .subtitle {
+    font-size: 24px;
+}
+
+nav#index {
+    columns: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 30px;
+    font-family: 'Titles';
+    color: #E8D2AE;
+    background-color: #607744;
+
+    border-bottom-style:solid;
+    border-bottom-color: #34623F;
+}
+
+nav#index a.element{
+    color:#E8D2AE;
+    width: 100%;
+    font-family: 'Text';
+}
+
+.other {
+    padding: 20px;
+    font-size: 18px;
+    background-color: #607744;
+
+    border-color: #34623F;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+}
+
+.other ul, .other ol {
+    padding: 5px;
+    font-size: 18px;
+
+    color: #E8D2AE;
+}
+
+ol.list, ul.list {
+    margin-top:5px;
+
+}
+
+ul.list li{
+    list-style-type: square;
+    position: relative;
+    margin-left: 20px;
+}
+
+.list p{
+    margin:5px;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    align-items: center;
+
+    width: 20%;
+    margin: 20px;
+    padding: 10px;
+
+    border-color: #34623F;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+
+    background-color: #607744;
+    font-size: 18px;
+}
+
+aside img {
+
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #34623F;
+}
+
+aside div#info{
+    margin-top: 10px;
+}
+
+aside table td.category{
+text-align: left;
+    font-weight: bold;
+    max-width: 50%;
+    height: auto;
+}
+
+aside table td.value{
+    text-align: right;
+max-width: 25%;
+    height: auto;
+}
+
+footer {
+
+    width: 100%;
+    height: 5%;
+
+    background-color: #34623F;
+    padding: 5px;
+
+    columns: 3;
+    text-align: center;
+
+    font-size: 18px;
+    text-align: center;
+}
+
+footer p{
+    margin:0;
+}
