@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    height:100%;
+    width: 100%;
+}
+footer{
+    background-color: rgb(59, 35, 12);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position-anchor: bottom;
+    font-family: "Dune_Rise";
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+section{
+    width: 30%;
+    height: 200px;
+    margin: 5px
+}
+
+section.a{
+    background-color: red;
+}
+section.b{
+    background-color: blue;
+}
+section.c{
+    background-color: green;
+}
